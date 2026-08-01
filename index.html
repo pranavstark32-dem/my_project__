@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Calendar Tasks</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="app">
+  <header>
+    <h1>📋 My Calendar Tasks</h1>
+    <div class="view-toggle">
+      <button id="btnMonth" class="active">Month</button>
+      <button id="btnList">List</button>
+    </div>
+  </header>
+
+  <div class="nav">
+    <button id="prevBtn">‹</button>
+    <div class="label" id="navLabel"></div>
+    <button id="nextBtn">›</button>
+    <button class="today-btn" id="todayBtn">Today</button>
+  </div>
+
+  <div id="monthView"></div>
+  <div id="listView" style="display:none"></div>
+</div>
+
+<div id="modalRoot"></div>
+
+<footer>Saved locally in your browser — nothing leaves your machine.</footer>
+
+<script src="/app.js"></script>
+</body>
+</html>
